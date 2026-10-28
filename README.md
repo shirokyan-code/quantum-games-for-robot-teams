@@ -71,10 +71,16 @@ configurations. The maximum sampled discrepancy was approximately 1.08 standard
 errors. These checks concern reproducibility of the prescribed-duration model,
 not real-flight feasibility or hardware performance.
 
-The four scripts and two data/documentation files are byte-for-byte copies of
-the manuscript sources, matching the hashes in the recorded validation report.
-The report describes that earlier verification run; it is not a claim that a
-new full simulation was run when preparing this repository.
+The four scripts and the data README are byte-for-byte copies of the manuscript
+sources, matching the hashes in the recorded validation report. The recorded
+results JSON and validation-report JSON have only had their line endings
+normalised from CRLF to LF for GitHub, with a final newline added to the results
+JSON; their parsed content is unchanged. The
+source hashes inside the validation report remain the original verification
+hashes, so the results JSON hash there refers to the original CRLF file. Use
+`manifest.sha256` for the current repository file hashes. The report describes
+that earlier verification run; it is not a claim that a new full simulation was
+run when preparing this repository.
 
 The SHA-256 manifest can be checked before a reproduction run. Generated figures
 are not distributed, and their PDF hashes may change between environments or
